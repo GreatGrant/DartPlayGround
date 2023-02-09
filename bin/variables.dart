@@ -1,4 +1,5 @@
 void main() {
+  /**** Variables *****/
   String name = "Grant";
   String surname = "Williams";
   int age = 23;
@@ -9,9 +10,7 @@ void main() {
   print(
       "$name $surname is age $age and $height feet tall.\nHis shoe size is $shoeSize\nFrom this given data, is his age equal to his height? $isAgeEqualHeight");
 
-  bool containsAnt = name.contains("ant");
-  print("The name $name contains the word 'ant' $containsAnt");
+  print("Does the name $name contains the word 'ant'? ${name.contains("ant")}");
   
-
   print("shoe size $shoeSize to integer is ${shoeSize.toInt()}");
 }
