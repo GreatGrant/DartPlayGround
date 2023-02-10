@@ -3,11 +3,10 @@ void main(List<String> args) {
   print(retrieveMyDetails(age: 23, name: "Grant"));
 }
 
-int getRemainder({required int fnum, required int snum}) => fnum % snum;
+getRemainder({required int fnum, required int snum}) => fnum % snum;
 
-String concatenateTwoStrings(String? firstString, String? secondString) =>
+concatenateTwoStrings(String? firstString, String? secondString) =>
     "$firstString $secondString";
 
-String retrieveMyDetails(
-        {String? name, int? age, String country = "Nigeria"}) =>
+retrieveMyDetails({String? name, int? age, String country = "Nigeria"}) =>
     "my name is $name. I am from $country and age $age";
