@@ -6,6 +6,7 @@ void main(List<String> args) {
     break;
     case AccountType.premium : print("premium");
     break;
+
     default:
       print("vip");
   }
