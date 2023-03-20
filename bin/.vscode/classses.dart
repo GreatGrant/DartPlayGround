@@ -1,6 +1,6 @@
 
 void main(){
-  User user = User("Grant", 18);
+  User user = User(name: "Grant", age: 18);
   print("User ${user.name} is ${user.age} years old");
 }
 
@@ -8,5 +8,9 @@ class User{
   String name;
   int age;
 
-  User(this.name, this.age);
+  User({
+    required this.name,
+    required this.age
+  });
+
 }
