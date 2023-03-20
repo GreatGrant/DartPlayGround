@@ -6,18 +6,23 @@ void main(){
   User user2 = const User(firstName: "Grant", lastName: "Williams", age: 18);
   print(user1 == user2);
   print("User ${user1.name} is ${user1.age} years old");
+  print(User.isShort());
 }
 
 class User{
-  // Makes these fields un-mutable
-  final String name;
+  final String firstName;
+  final String lastName;
+  final name;
   final int age;
+  static int height = 5;
 
-  // Use the const keyword when members of the constructor are all final
   const User({
-    required String firstName,
-    required String lastName,
-    required this.age
-  }): name = "$firstName $lastName";
+    required this.firstName,
+    required this.lastName,
+    required this.age}): name = "$firstName $lastName";
 
+  // a static method called upon the class
+  static bool isShort(){
+    return height < 6;
+  }
 }
