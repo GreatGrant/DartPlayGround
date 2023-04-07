@@ -8,8 +8,8 @@ void main(){
   // print(y._name);
 
 
+  // from import 'class_properties.dart';
   final z = User(name: "Bem", surname: "Kamsy", email: "keve@gmail.com");
-  z.email = "keve113@gmail.com";
-  z.name;
+  // prints out invalid email when an invalid mail is entered
   print(z.email);
 }

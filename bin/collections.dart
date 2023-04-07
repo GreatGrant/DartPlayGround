@@ -14,6 +14,5 @@ void main(List<String> args) {
   print("${student["name"]} is ${student["age"]}");
 
   // Sets
-  Set<int> registrationNumbers = {1, 2, 4,5}
-  ;
+  Set<int> registrationNumbers = {1, 2, 4,5};
 }
